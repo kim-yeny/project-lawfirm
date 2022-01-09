@@ -9,10 +9,9 @@ table{width:100%;border-spacing:0;border-collapse:collapse;}
 img,fieldset{border:0;}
 caption,legend{line-height:0;font-size:1px;overflow:hidden;}
 a{color:#000;text-decoration:none;}
-button:hover{cursor: pointer; border: none;}
+button{cursor: pointer; border: none;}
  
 .clear {clear:both;}
 .clear:after { content:""; display:block; clear:both;}
 .hide {position: absolute; left: -5000px;}
 .flex {display: flex;}
-

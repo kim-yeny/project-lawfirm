@@ -7,59 +7,76 @@ html {
     font-size: 20px;
 }
 
-span {
-    font-size: 1rem;
-}
-
+span,
 button {
     font-size: 1rem;
 }
 
+span {
+    display: block;
+}
+
 /* H E A D E R */
 header .top {
-    height: 130px;
-    background: #222;
-    border-bottom: 1px solid #333;
     justify-content: center;
     align-items: center;
+    height: 130px;
+    border-bottom: 1px solid #333;
+    background: #222;
 }
 
 nav {
-    height: 70px;
-    background: #222;
     justify-content: center;
     align-items: center;
+    height: 70px;
+    background: #222;
 }
 
-nav li {
-    width: 250px;
+nav li > a {
     text-align: center;
-}
-
-nav .gnb {
-    width: 1330px;
-    justify-content: space-between;
-}
-
-nav .gnb > li {
-    float: left;
-    position: relative;
-}
-
-nav .gnb > li > a {
-    padding: 10px;
+    display: block;
     color: #fff;
 }
 
+nav .gnb {
+    justify-content: space-between;
+    align-items: center;
+    width: 1200px;
+}
+
+nav .gnb > li {
+    position: relative;
+    float: left;
+    width: 230px;
+}
+
+nav .gnb > li > a {
+    line-height: 70px;
+}
+
 nav .lnb {
+    display: none;
     position: absolute;
     top: 70px;
     left: 0;
-    display: none;
+    width: 100%;
+    background: rgba(34, 34, 34, 0.8);
+}
+
+nav .lnb > li {
+    padding: 0 0 15px 0;
 }
 
 nav .lnb > li > a {
     width: 100%;
+}
+
+nav .lnb > li > a:hover {
+    color: #9A9A6A;
+}
+
+nav .gnb > li > a:hover + .lnb,
+nav .gnb > li:hover .lnb {
     display: block;
 }
 
@@ -75,7 +92,6 @@ nav .lnb > li > a {
 }
 
 #intro h1 span {
-    display: block;
     width: 500px;
     margin: 20px 0 0 0;
 }
@@ -97,7 +113,6 @@ nav .lnb > li > a {
 }
 
 .service h1 span {
-    display: block;
     margin: 10px 0 0 0;
 }
 
@@ -110,13 +125,13 @@ nav .lnb > li > a {
 .service .card {
     position: relative;
     flex-direction: column;
-    width: 270px;
+    /* width: 270px; */
     height: 230px;
     padding: 30px;
     box-sizing: border-box;
     background: rgba(34, 34, 34, 0.9);
     color: #fff;
-    transition: height 0.5s, opacity 2s;
+    transition: height 0.5s;
 }
 
 .service .card:not(:nth-of-type(5)):after {
@@ -130,22 +145,27 @@ nav .lnb > li > a {
 
 .service .card:hover {
     height: 280px;
-    background: #abab90;
+    background: #9A9A6A;
 }
 
 .service .card:hover button {
-    display: block;
     opacity: 1;
 }
 
 .service .card button {
-    display: none;
     opacity: 0;
-    padding: 5px 0;
-    background: #222;
+    padding: 10px 0;
+    background: transparent;
+    border: 1px solid #fff;
     color: #fff;
     font-size: 0.8rem;
-    transition: opacity 2s;
+    transition: opacity 0.5s;
+}
+
+.service .card button:hover {
+    background: #fff;
+    background: rgba(255, 255, 255, 0.3);
+    /* color: #9A9A6A; */
 }
 
 .service .card i {
@@ -159,16 +179,137 @@ nav .lnb > li > a {
 }
 
 .share {
-    padding: 100px 0;
+    padding: 100px 0 150px 0;
     text-align: center;
+    background: url("https://via.placeholder.com/1920x500") no-repeat center;
 }
 
 .share span {
-    display: block;
     margin-top: 10px;
 }
 
 .share button {
     padding: 10px 50px;
     margin-top: 30px;
+    background: transparent;
+    border: 1px solid #fff;
+}
+
+.share button:hover {
+    background: #fff;
+}
+
+
+
+
+
+.consult {
+    background: pink;
+    position: relative;
+    height: 300px;
+}
+
+.consult .box-left {
+    position: absolute;
+    top: -50px;
+    left: 0;
+
+    width: 40%;
+    height: 300px;
+    background: grey;
+    z-index: 10;
+}
+
+.consult .box-right {
+    position: absolute;
+    bottom: -50px;
+    right: 0;
+
+    width: 70%;
+    height: 300px;
+    background: sandybrown;
+}
+
+
+
+
+
+
+.social {
+    background: gray;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 150px 0 100px 0;
+}
+
+.social > h1 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.social .box-con {
+    width: 1200px;
+    height: fit-content;
+    justify-content: space-between;
+    color: #fff;
+}
+
+.social .box-con > div {
+    width: 49%;
+    flex-direction: column;
+    justify-content: center;
+    background: url("https://via.placeholder.com/400x300") no-repeat right;
+}
+
+.social .box-left div {
+    background: #253253;
+}
+
+.social .box-right div {
+    background: #9A9A6A;
+}
+
+.social .box-con > div > div {
+    width: 50%;
+    height: 100%;
+    padding: 30px;
+    box-sizing: border-box;
+    transition: all 0.5s;
+}
+
+.social .box-con > div > div:hover {
+    width: 60%;
+}
+
+.social .box-con > div > div > h1 {
+    position: relative;
+    padding-top: 10px;
+}
+
+.social .box-con > div > div > h1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 3px;
+    width: 30px;
+    height: 3px;
+    background: #fff;
+}
+
+.social span {
+    width: 200px;
+    margin: 5px 0 40px 0;
+    font-weight: normal;
+}
+
+.social button {
+    padding: 5px 20px;
+    background: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+.social button:hover {
+    background: rgba(255, 255, 255, 0.3);
 }
