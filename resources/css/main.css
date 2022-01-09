@@ -65,7 +65,7 @@ nav .lnb > li > a {
 
 #intro  {
     height: 600px;
-    background: url("http://placehold.it/1920x600") no-repeat center;
+    background: url("https://placehold.it/1920x600") no-repeat center;
     align-items: center;
     padding: 0 0 0 300px;
 }
@@ -87,7 +87,7 @@ nav .lnb > li > a {
     justify-content: center;
     padding: 100px 0;
     box-sizing: border-box;
-    background: url("http://placehold.it/1920x800") no-repeat center;
+    background: url("https://placehold.it/1920x800") no-repeat center;
 }
 
 .service h1 {
