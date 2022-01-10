@@ -5,43 +5,100 @@
 body,
 html {
     font-size: 20px;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
-span,
-button {
+section {
+    padding: 0 15px;
+}
+
+button,
+span {
     font-size: 1rem;
 }
 
 span {
     display: block;
+    font-weight: lighter;
 }
 
-/* H E A D E R */
+p,
+span {
+    font-size: 0.8rem;
+}
+
+/* BOTTOM (Only Mobile) */
+.bottom-menu {
+    display: none;
+}
+
+/* SCROLL (Only PC) */
+.scroll {
+    position: fixed;
+    right: 20px;
+    top: 40%;
+    z-index: 50;
+}
+
+.scroll a {
+    display: block;
+    position: relative;
+    height: 30px;
+    margin: 3px 0;
+    text-align: right;
+    line-height: 30px;
+    font-size: 0.7rem;
+    color: #aaa;
+}
+
+.scroll a::after {
+    content: "";
+    position: absolute;
+    right: -20px;
+    width: 10px;
+    height: 30px;
+    background: #aaa;
+}
+
+.scroll a.on::after {
+    background: #0F1E32;
+}
+
+/* HEADER */
 header .top {
     justify-content: center;
     align-items: center;
-    height: 130px;
+    height: 100px;
     border-bottom: 1px solid #333;
     background: #222;
+}
+
+header i {
+    display: none !important;
 }
 
 nav {
     justify-content: center;
     align-items: center;
-    height: 70px;
+    height: 50px;
+    border-bottom: 2px solid #B39D72;
+    box-sizing: border-box;
     background: #222;
 }
 
 nav li > a {
     text-align: center;
     display: block;
-    color: #fff;
+    color: #aaa;
 }
 
 nav .gnb {
     justify-content: space-between;
     align-items: center;
-    width: 1200px;
+    max-width: 1200px;
+    padding: 0 15px;
+    box-sizing: border-box;
 }
 
 nav .gnb > li {
@@ -51,16 +108,21 @@ nav .gnb > li {
 }
 
 nav .gnb > li > a {
-    line-height: 70px;
+    line-height: 50px;
+}
+
+nav .gnb > li > a:hover {
+    color: #B39D72;
 }
 
 nav .lnb {
     display: none;
     position: absolute;
-    top: 70px;
+    top: 50px;
     left: 0;
     width: 100%;
     background: rgba(34, 34, 34, 0.8);
+    padding: 15px 0 0 0;
 }
 
 nav .lnb > li {
@@ -69,10 +131,11 @@ nav .lnb > li {
 
 nav .lnb > li > a {
     width: 100%;
+    color: #aaa;
 }
 
 nav .lnb > li > a:hover {
-    color: #9A9A6A;
+    color: #fff;
 }
 
 nav .gnb > li > a:hover + .lnb,
@@ -80,52 +143,55 @@ nav .gnb > li:hover .lnb {
     display: block;
 }
 
-#intro  {
-    height: 600px;
-    background: url("https://via.placeholder.com/1920x600") no-repeat center;
+#intro {
     align-items: center;
-    padding: 0 0 0 300px;
+    height: 600px;
+    /* padding: 0 0 0 300px; */
+    padding: 0 15px 0 15px;
+    padding-left: 15%;
+    background: url("https://via.placeholder.com/1920x600") no-repeat center;
 }
 
 #intro h1 {
+    max-width: 100%;
     font-size: 2rem;
 }
 
 #intro h1 span {
     width: 500px;
-    margin: 20px 0 0 0;
+    margin: 20px 0 0;
 }
 
-/* S E C T I O N */
+/* SECTION */
 .service {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 100px 0;
+    padding: 100px 15px;
     box-sizing: border-box;
     background: url("https://via.placeholder.com/1920x800") no-repeat center;
 }
 
 .service h1 {
-    width: 1350px;
-    margin: 0 0 50px 0;
-    text-align: right;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 0 30px;
+    text-align: left;
 }
 
 .service h1 span {
-    margin: 10px 0 0 0;
+    margin: 10px 0 0;
 }
 
 .service > div {
     align-items: flex-end;
-    width: 1350px;
+    max-width: 1200px;
     height: 280px;
 }
 
 .service .card {
-    position: relative;
     flex-direction: column;
-    /* width: 270px; */
+    position: relative;
     height: 230px;
     padding: 30px;
     box-sizing: border-box;
@@ -145,41 +211,40 @@ nav .gnb > li:hover .lnb {
 
 .service .card:hover {
     height: 280px;
-    background: #9A9A6A;
+    background: #B39D72;
 }
 
 .service .card:hover button {
+    visibility: visible;
     opacity: 1;
 }
 
 .service .card button {
+    visibility: hidden;
     opacity: 0;
     padding: 10px 0;
     background: transparent;
     border: 1px solid #fff;
     color: #fff;
     font-size: 0.8rem;
-    transition: opacity 0.5s;
+    transition: opacity 1s;
 }
 
 .service .card button:hover {
-    background: #fff;
     background: rgba(255, 255, 255, 0.3);
-    /* color: #9A9A6A; */
 }
 
 .service .card i {
-    margin: 0 0 40px 0;
+    margin: 0 0 40px;
     text-align: right;
 }
 
 .service .card p {
-    margin: 15px 0 20px 0;
-    font-size: 0.8rem;
+    margin: 15px 0 20px;
 }
 
 .share {
-    padding: 100px 0 150px 0;
+    padding: 100px 15px 150px 15px;
     text-align: center;
     background: url("https://via.placeholder.com/1920x500") no-repeat center;
 }
@@ -189,85 +254,115 @@ nav .gnb > li:hover .lnb {
 }
 
 .share button {
-    padding: 10px 50px;
     margin-top: 30px;
-    background: transparent;
+    padding: 10px 50px;
     border: 1px solid #fff;
+    background: transparent;
 }
 
 .share button:hover {
     background: #fff;
 }
 
-
-
-
-
 .consult {
-    background: pink;
     position: relative;
     height: 300px;
+    padding: 0 15px;
 }
 
 .consult .box-left {
+    justify-content: flex-end;
+    align-items: center;
     position: absolute;
     top: -50px;
     left: 0;
-
     width: 40%;
     height: 300px;
-    background: grey;
+    padding: 0 5% 0 0;
+    box-sizing: border-box;
+    background: #B39D72;
+    color: #fff;
     z-index: 10;
 }
 
-.consult .box-right {
-    position: absolute;
-    bottom: -50px;
-    right: 0;
-
-    width: 70%;
-    height: 300px;
-    background: sandybrown;
+.consult .box-left h1 {
+    width: 300px;
 }
 
+.consult .box-left span {
+    margin-top: 20px;
+}
 
+.consult .box-right {
+    align-items: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 70%;
+    height: 300px;
+    padding: 30px 0 30px 12%;
+    box-sizing: border-box;
+    background: #222;
+}
 
+.consult form {
+    flex-direction: column;
+    width: 55%;
+    height: 230px;
+}
 
+.consult input[type=text],
+.consult textarea {
+    margin: 0 0 10px;
+    padding: 7px;
+    border: 1px solid #fff;
+    background: transparent;
+    color: #fff;
+}
 
+.consult textarea {
+    resize: none;
+    flex: 1;
+}
+
+.consult .box-right span {
+    color: #fff;
+    font-size: 0.7rem;
+}
+
+.consult .box-right button {
+    margin: 0 0 0 30px;
+    width: 200px;
+    height: 230px;
+    color: #fff;
+    background: #333;
+}
+
+.consult .box-right button:hover {
+    background: #B39D72;
+}
 
 .social {
-    background: gray;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 150px 0 100px 0;
-}
-
-.social > h1 {
-    text-align: center;
-    margin-bottom: 50px;
+    padding: 100px 15px 130px 15px;
 }
 
 .social .box-con {
-    width: 1200px;
-    height: fit-content;
     justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    height: fit-content;
     color: #fff;
 }
 
 .social .box-con > div {
-    width: 49%;
     flex-direction: column;
     justify-content: center;
-    background: url("https://via.placeholder.com/400x300") no-repeat right;
-}
-
-.social .box-left div {
-    background: #253253;
-}
-
-.social .box-right div {
-    background: #9A9A6A;
+    width: 49%;
+    background: url("https://via.placeholder.com/500x300") no-repeat;
+    background-position: 100% 50%;
 }
 
 .social .box-con > div > div {
@@ -275,6 +370,7 @@ nav .gnb > li:hover .lnb {
     height: 100%;
     padding: 30px;
     box-sizing: border-box;
+    background: #0F1E32;
     transition: all 0.5s;
 }
 
@@ -285,6 +381,7 @@ nav .gnb > li:hover .lnb {
 .social .box-con > div > div > h1 {
     position: relative;
     padding-top: 10px;
+    font-size: 1.2rem;
 }
 
 .social .box-con > div > div > h1::before {
@@ -293,23 +390,88 @@ nav .gnb > li:hover .lnb {
     top: 0;
     left: 3px;
     width: 30px;
-    height: 3px;
+    height: 2px;
     background: #fff;
+}
+
+.social > h1 {
+    margin-bottom: 50px;
+    text-align: center;
 }
 
 .social span {
     width: 200px;
-    margin: 5px 0 40px 0;
-    font-weight: normal;
+    margin: 5px 0 40px;
 }
 
 .social button {
     padding: 5px 20px;
-    background: transparent;
     border: 1px solid #fff;
+    background: transparent;
+    font-size: 0.8rem;
     color: #fff;
 }
 
 .social button:hover {
     background: rgba(255, 255, 255, 0.3);
+}
+
+.story {
+    height: 150px;
+    padding: 0 15px;
+    background: url("https://via.placeholder.com/1920x200") no-repeat center;
+}
+
+.story > div {
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.story h1 {
+    font-weight: normal;
+}
+
+.story button {
+    width: 200px;
+    height: 50px;
+}
+
+footer {
+    padding: 50px 15px;
+    background: #222;
+    color: #aaa;
+}
+
+footer > div {
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+footer img.logo {
+    margin-bottom: 20px;
+}
+
+footer .box-left b {
+    color: #B39D72;
+}
+
+footer .box-left span {
+    margin-top: 20px;
+}
+
+footer .box-right {
+    width: 20%;
+}
+
+footer .box-right b {
+    display: block;
+    margin: 5px 0 30px;
+    font-size: 2rem;
+    color: #B39D72;
 }

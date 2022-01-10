@@ -25,53 +25,70 @@
     <!-- CSS -->
     <link rel="stylesheet" href="./resources/css/default.css">
     <link rel="stylesheet" href="./resources/css/main.css">
+    <link rel="stylesheet" href="./resources/css/tablet.css">
+    <link rel="stylesheet" href="./resources/css/mobile.css">
 </head>
 
 <body>
-    <header>
+    <div class="bottom-menu">
+        <a href="#"><i class="fas fa-phone-alt fa-lg"></i>전화하기</a>
+        <a href="#"><i class="fas fa-comment-dots fa-lg"></i>카카오톡</a>
+        <a href="#"><i class="fas fa-map-marker-alt fa-lg"></i>오시는길</a>
+        <a href="#"><i class="fas fa-user-tie fa-lg"></i>업무분야</a>
+    </div>
+    <div class="scroll">
+        <a href="#sect-intro" class="">법무법인 샘플</a>
+        <a href="#sect-service">주요 업무분야</a>
+        <a href="#sect-share">샘플 자료실</a>
+        <a href="#sect-consult">온라인 상담</a>
+        <a href="#sect-social">사회활동·언론</a>
+    </div>
+    <header id="sect-intro">
         <div class="top flex">
             <img class="logo" src="https://via.placeholder.com/200x70" alt="">
+            <div class="btn-nav flex">
+                <i class="fas fa-bars fa-2x"></i>
+                <i class="fas fa-times fa-2x"></i>
+            </div>
         </div>
         <nav class="flex">
             <ul class="gnb flex">
                 <li>
                     <a href="#a">법인소개</a>
                     <ul class="lnb">
-                        <li><a href="#a">서브메뉴</a></li>
-                        <li><a href="#a">서브메뉴</a></li>
-                        <li><a href="#a">서브메뉴</a></li>
+                        <li><a href="#a">샘플 소개</a></li>
+                        <li><a href="#a">오시는 길</a></li>
+                        <li><a href="#a">인재채용</a></li>
                     </ul>
                 </li>
                 <li>
                     <a href="#a">업무안내</a>
                     <ul class="lnb">
-                        <li><a href="#a">서브메뉴</a></li>
-                        <li><a href="#a">서브메뉴</a></li>
-                        <li><a href="#a">서브메뉴</a></li>
+                        <li><a href="#a">주요 업무분야</a></li>
+                        <li><a href="#a">업무의뢰절차</a></li>
+                        <li><a href="#a">진행사례·후기</a></li>
                     </ul>
                 </li>
                 <li>
                     <a href="#a">구성원</a>
                     <ul class="lnb">
-                        <li><a href="#a">서브메뉴</a></li>
-                        <li><a href="#a">서브메뉴</a></li>
-                        <li><a href="#a">서브메뉴</a></li>
+                        <li><a href="#a">변호사</a></li>
+                        <li><a href="#a">자문단</a></li>
                     </ul>
                 </li>
                 <li>
                     <a href="#a">상담문의</a>
                     <ul class="lnb">
-                        <li><a href="#a">서브메뉴</a></li>
-                        <li><a href="#a">서브메뉴</a></li>
-                        <li><a href="#a">서브메뉴</a></li>
+                        <li><a href="#a">상담안내</a></li>
+                        <li><a href="#a">자주 묻는 질문</a></li>
                     </ul>
                 </li>
                 <li>
                     <a href="#a">고객센터</a>
                     <ul class="lnb">
-                        <li><a href="#a">서브메뉴</a></li>
-                        <li><a href="#a">서브메뉴</a></li>
-                        <li><a href="#a">서브메뉴</a></li>
+                        <li><a href="#a">공지사항</a></li>
+                        <li><a href="#a">자료실</a></li>
+                        <li><a href="#a">활동·언론</a></li>
                     </ul>
                 </li>
             </ul>
@@ -79,16 +96,12 @@
     </header>
     <div class="flex" id="intro">
         <h1>위치는 사진에 따라 나중에 잡읍시다
-            <span>
-                어쩌고 저쩌고 샘플 법무법인 어쩌고 저쩌고 어쩌고 저쩌고 샘플 법무법인 어쩌고 저쩌고 어쩌고 저쩌고 샘플 법무법인 어쩌고 저쩌고
-            </span>
+            <span>어쩌고 저쩌고 샘플 법무법인 어쩌고 저쩌고 어쩌고 저쩌고 샘플 법무법인 어쩌고 저쩌고 어쩌고 저쩌고 샘플 법무법인 어쩌고 저쩌고</span>
         </h1>
     </div>
-    <section class="service flex">
+    <section id="sect-service" class="service flex">
         <h1>샘플 법무법인의 전문 분야
-            <span>
-                각 업무분야별 전담팀을 구성하여 OO의 경험과 전문성을 바탕으로 최상의 서비스를 제공합니다.
-            </span>
+            <span>각 업무분야별 전담팀을 구성하여 OO의 경험과 전문성을 바탕으로 최상의 서비스를 제공합니다.</span>
         </h1>
         <div class="flex">
             <div class="card flex">
@@ -97,7 +110,7 @@
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing.
                 </p>
-                <button>알아보기</button>
+                <button>자세히 보기</button>
             </div>
             <div class="card flex">
                 <i class="fas fa-home"></i>
@@ -105,7 +118,7 @@
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing.
                 </p>
-                <button>알아보기</button>
+                <button>자세히 보기</button>
             </div>
             <div class="card flex">
                 <i class="fas fa-home"></i>
@@ -113,7 +126,7 @@
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing.
                 </p>
-                <button>알아보기</button>
+                <button>자세히 보기</button>
             </div>
             <div class="card flex">
                 <i class="fas fa-home"></i>
@@ -121,7 +134,7 @@
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing.
                 </p>
-                <button>알아보기</button>
+                <button>자세히 보기</button>
             </div>
             <div class="card flex">
                 <i class="fas fa-home"></i>
@@ -129,62 +142,79 @@
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing.
                 </p>
-                <button>알아보기</button>
+                <button>자세히 보기</button>
             </div>
         </div>
     </section>
-    <section class="share">
-        <h1>계속해서 성장하는 OO법인
-            <span>
-                수년간의 경험과 노하우가 담긴 법률 전문 컨텐츠를 공유합니다.
-                관련 지식이 필요할 때 자유롭게 이용하실 수 있습니다.
-            </span>
+    <section id="sect-share" class="share">
+        <h1>계속해서 성장하는 샘플 법무법인
+            <span>수년간의 경험과 노하우가 담긴 법률 전문 컨텐츠를 공유합니다. 관련 지식이 필요할 때 자유롭게 이용하실 수 있습니다.</span>
         </h1>
         <button>자료실 바로가기</button>
     </section>
-    <section class="consult">
-        <div class="box-left">
-            <div class="box-txt">
-                <h1>샘플 법무법인
-                    <span>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing.
-                    </span>
-                </h1>
-            </div>
+    <section id="sect-consult" class="consult">
+        <div class="box-left flex">
+            <h1>무료 온라인 법률 상담
+                <span>법률 자문이 필요하신 분들에게 무료로 법률 상담을 제공하고 있습니다. 자세한 내용은 고객센터 혹은 상담안내 메뉴를 확인해 주세요.</span>
+            </h1>
         </div>
-        <div class="box-right">
-            수년간의 경험과 노하우가 담긴 법률 전문 컨텐츠를 공유합니다.
-            관련 지식이 필요할 때 자유롭게 이용하실 수 있습니다.
+        <div class="box-right flex">
+            <form action="#" id="consult-form" class="flex">
+                <input type="text" placeholder="성함" maxlength="20">
+                <input type="text" placeholder="연락처" maxlength="50">
+                <textarea placeholder="상담 내용 (최대 300자)" maxlength="300"></textarea>
+                <span>※ 상담 내용과 신청 인원에 따라 답변이 느릴 수 있습니다.</span>
+            </form>
+            <button type="submit" form="consult-form">온라인 상담신청
+            </button>
         </div>
     </section>
-    <section class="social flex">
-        <h1>샘플 법무법인 샘플 법무법인</h1>
+    <section id="sect-social" class="social flex">
+        <h1>최고가 되기 위해 최선을 다하는 샘플</h1>
         <div class="box-con flex">
             <div class="box-left flex">
                 <div>
-                    <h1>샘플 법무법인
-                        <span>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing.
-                        </span>
+                    <h1>미디어 속 샘플
+                        <span>다양한  매체에 얼굴을 비추며 고객을 위해 최선을 다하는 샘플이 되겠습니다.</span>
                     </h1>
                     <button>자세히 보기</button>
                 </div>
             </div>
             <div class="box-right flex">
                 <div>
-                    <h1>샘플 법무법인
-                        <span>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing.
-                        </span>
+                    <h1>사회적 공헌 활동
+                        <span>일반인, 지역사회, 소외계층의 복지와 발전에 기여하는 샘플이 되겠습니다.</span>
                     </h1>
                     <button>자세히 보기</button>
                 </div>
             </div>
         </div>
+    </section>
+    <section id="sect-story" class="story">
+        <div class="flex">
+            <h1>샘플 법무법인의 <b>다양한 성공 사례</b>를 둘러보세요.</h1>
+            <button>자세히 보기</button>
         </div>
     </section>
     <footer>
-
+        <div class="flex">
+            <div class="box-left">
+                <img class="logo" src="https://via.placeholder.com/200x70" alt="">
+                <p>
+                    <b>본사</b> 서울 샘플구 샘플대로 123길 45, 샘플빌딩 (샘플동 678-9)<br>
+                    <b>분사무소</b> 충남 샘플시 샘플대로 987길, 샘플타워 6층 (샘플동 543-21)
+                    <span>Copyright ⓒ 2022 EsRP All rights reserved.</span>
+                </p>
+            </div>
+            <div class="box-right">
+                <p>
+                    고객센터
+                    <b>1500-1500</b>
+                    월~금 09:30~18:00<br>
+                    주말, 공휴일은 미운영
+                </p>
+            </div>
+        </div>
     </footer>
 </body>
 
