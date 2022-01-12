@@ -7,6 +7,8 @@ html {
     font-size: 20px;
     scroll-behavior: smooth;
     overflow-x: hidden;
+
+    background: #FFFCF5;
 }
 
 section {
@@ -18,14 +20,13 @@ span {
     font-size: 1rem;
 }
 
+p {
+    font-size: 0.8rem;
+}
+
 span {
     display: block;
     font-weight: lighter;
-}
-
-p,
-span {
-    font-size: 0.8rem;
 }
 
 /* BOTTOM (Only Mobile) */
@@ -62,7 +63,7 @@ span {
 }
 
 .scroll a.on::after {
-    background: #0F1E32;
+    background: #605C30;
 }
 
 /* HEADER */
@@ -76,6 +77,10 @@ header .top {
 
 header i {
     display: none !important;
+}
+
+header .logo {
+    height: 60px;
 }
 
 nav {
@@ -145,21 +150,26 @@ nav .gnb > li:hover .lnb {
 
 #intro {
     align-items: center;
+    max-width: 1920px;
+    margin: 0 auto;
     height: 600px;
     /* padding: 0 0 0 300px; */
     padding: 0 15px 0 15px;
     padding-left: 15%;
-    background: url("https://via.placeholder.com/1920x600") no-repeat center;
+    background: url("../img/intro-background-2.jpg") no-repeat center;
+    color: #fff;
 }
 
 #intro h1 {
-    max-width: 100%;
     font-size: 2rem;
+    color: #B39D72;
 }
 
 #intro h1 span {
     width: 500px;
     margin: 20px 0 0;
+    font-weight: lighter;
+    color: #777;
 }
 
 /* SECTION */
@@ -169,7 +179,6 @@ nav .gnb > li:hover .lnb {
     justify-content: center;
     padding: 100px 15px;
     box-sizing: border-box;
-    background: url("https://via.placeholder.com/1920x800") no-repeat center;
 }
 
 .service h1 {
@@ -177,10 +186,12 @@ nav .gnb > li:hover .lnb {
     max-width: 1200px;
     margin: 0 0 30px;
     text-align: left;
+    font-size: 1.8rem;
 }
 
 .service h1 span {
     margin: 10px 0 0;
+    color: #aaa;
 }
 
 .service > div {
@@ -195,7 +206,7 @@ nav .gnb > li:hover .lnb {
     height: 230px;
     padding: 30px;
     box-sizing: border-box;
-    background: rgba(34, 34, 34, 0.9);
+    background: rgba(34, 34, 34, 1);
     color: #fff;
     transition: height 0.5s;
 }
@@ -235,7 +246,7 @@ nav .gnb > li:hover .lnb {
 }
 
 .service .card i {
-    margin: 0 0 40px;
+    margin: 0 0 20px;
     text-align: right;
 }
 
@@ -246,7 +257,12 @@ nav .gnb > li:hover .lnb {
 .share {
     padding: 100px 15px 150px 15px;
     text-align: center;
-    background: url("https://via.placeholder.com/1920x500") no-repeat center;
+    background: url("../img/share7.jpg") no-repeat center;
+}
+
+.share h1 {
+    font-size: 1.8rem;
+    color: #fff;
 }
 
 .share span {
@@ -258,10 +274,12 @@ nav .gnb > li:hover .lnb {
     padding: 10px 50px;
     border: 1px solid #fff;
     background: transparent;
+    color: #fff;
 }
 
 .share button:hover {
     background: #fff;
+    color: #000;
 }
 
 .consult {
@@ -361,8 +379,15 @@ nav .gnb > li:hover .lnb {
     flex-direction: column;
     justify-content: center;
     width: 49%;
-    background: url("https://via.placeholder.com/500x300") no-repeat;
     background-position: 100% 50%;
+}
+
+.social .box-left {
+    background: url("../img/social-1.jpg") no-repeat;
+}
+
+.social .box-right {
+    background: url("../img/social-2.jpg") no-repeat;
 }
 
 .social .box-con > div > div {
@@ -370,7 +395,7 @@ nav .gnb > li:hover .lnb {
     height: 100%;
     padding: 30px;
     box-sizing: border-box;
-    background: #0F1E32;
+    background: #605C30;
     transition: all 0.5s;
 }
 
@@ -402,6 +427,7 @@ nav .gnb > li:hover .lnb {
 .social span {
     width: 200px;
     margin: 5px 0 40px;
+    font-size: 0.8rem;
 }
 
 .social button {
@@ -419,7 +445,7 @@ nav .gnb > li:hover .lnb {
 .story {
     height: 150px;
     padding: 0 15px;
-    background: url("https://via.placeholder.com/1920x200") no-repeat center;
+    background: url("../img/story.jpg") no-repeat center;
 }
 
 .story > div {
@@ -433,11 +459,14 @@ nav .gnb > li:hover .lnb {
 
 .story h1 {
     font-weight: normal;
+    color: #fff;
 }
 
 .story button {
     width: 200px;
     height: 50px;
+    background: #B39D72;
+    color: #fff;
 }
 
 footer {
@@ -455,6 +484,8 @@ footer > div {
 
 footer img.logo {
     margin-bottom: 20px;
+    height: 50px;
+    opacity: 30%;
 }
 
 footer .box-left b {
