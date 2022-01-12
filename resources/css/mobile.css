@@ -69,15 +69,15 @@
         z-index: 100;
     }
 
-    header .top img {
-        height: 50px;
-    }
-
     header .btn-nav {
         justify-content: center;
         align-items: center;
         position: relative;
         width: 30px;
+    }
+
+    header .logo {
+        height: 35px;
     }
 
     header i {
@@ -125,6 +125,8 @@
         max-width: 100%;
         height: 500px;
         padding: 0 30px;
+        background-position: 60% 50%;
+        background-size: cover;
     }
 
     #intro h1 {
@@ -137,13 +139,11 @@
 
     /* SECTION */
     .service {
-        padding: 80px 20px;
-        background: url("https://via.placeholder.com/1920x800") no-repeat center;
-        background-size: cover;
+        padding: 50px 20px;
     }
 
     .service h1 {
-        width: 85%;
+        width: 90%;
     }
 
     .service > div {
@@ -159,6 +159,7 @@
         width: 100%;
         height: fit-content;
         margin-bottom: 5px;
+        padding: 30px 25px;
         cursor: pointer;
     }
 
@@ -180,11 +181,15 @@
     }
 
     .service .card p {
-        margin: 10px 0 15px;
+        margin: 10px 0 0 0;
     }
 
     .share {
         padding: 100px 20px;
+    }
+
+    .share span {
+        margin: 20px 0 10px 0;
     }
 
     .consult {
@@ -235,6 +240,8 @@
         flex-direction: column;
         justify-content: center;
         width: 100%;
+        background-position: 0% 0%;
+        background-size: cover;
     }
 
     .social .box-con > div:first-of-type {
@@ -252,11 +259,13 @@
     }
 
     .social h1 {
-        width: 90%;
+        width: 70%;
+        margin-bottom: 30px;
     }
 
     .social span {
         width: fit-content;
+        margin: 5px 0 0;
     }
 
     .story {

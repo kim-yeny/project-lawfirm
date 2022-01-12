@@ -7,7 +7,6 @@ html {
     font-size: 20px;
     scroll-behavior: smooth;
     overflow-x: hidden;
-
     background: #FFFCF5;
 }
 
@@ -75,12 +74,12 @@ header .top {
     background: #222;
 }
 
-header i {
-    display: none !important;
-}
-
 header .logo {
     height: 60px;
+}
+
+header i {
+    display: none !important;
 }
 
 nav {
@@ -149,18 +148,18 @@ nav .gnb > li:hover .lnb {
 }
 
 #intro {
+    justify-content: center;
     align-items: center;
     max-width: 1920px;
     margin: 0 auto;
     height: 600px;
-    /* padding: 0 0 0 300px; */
-    padding: 0 15px 0 15px;
-    padding-left: 15%;
+    padding: 0 15px;
     background: url("../img/intro-background-2.jpg") no-repeat center;
     color: #fff;
 }
 
 #intro h1 {
+    width: 1200px;
     font-size: 2rem;
     color: #B39D72;
 }
@@ -256,8 +255,9 @@ nav .gnb > li:hover .lnb {
 
 .share {
     padding: 100px 15px 150px 15px;
+    box-sizing: border-box;
     text-align: center;
-    background: url("../img/share7.jpg") no-repeat center;
+    background: url("../img/share.jpg") no-repeat center;
 }
 
 .share h1 {
@@ -296,7 +296,7 @@ nav .gnb > li:hover .lnb {
     left: 0;
     width: 40%;
     height: 300px;
-    padding: 0 5% 0 0;
+    padding: 0 70px 0 0;
     box-sizing: border-box;
     background: #B39D72;
     color: #fff;
@@ -325,7 +325,7 @@ nav .gnb > li:hover .lnb {
 
 .consult form {
     flex-direction: column;
-    width: 55%;
+    width: 40%;
     height: 230px;
 }
 
