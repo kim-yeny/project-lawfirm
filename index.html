@@ -40,17 +40,18 @@
 
     <!-- Scroll BTN at the Side -->
     <div class="scroll">
-        <a href="#sect-intro" class="">법무법인 샘플</a>
-        <a href="#sect-service">주요 업무분야</a>
-        <a href="#sect-share">샘플 자료실</a>
-        <a href="#sect-consult">온라인 상담</a>
-        <a href="#sect-social">사회활동·언론</a>
+        <a href="javascript:void(0)" onclick="js:scrollMove('intro')">법무법인 샘플</a>
+        <a href="javascript:void(0)" onclick="js:scrollMove('service')">주요 업무분야</a>
+        <a href="javascript:void(0)" onclick="js:scrollMove('share')">샘플 자료실</a>
+        <a href="javascript:void(0)" onclick="js:scrollMove('consult')">온라인 상담</a>
+        <a href="javascript:void(0)" onclick="js:scrollMove('social')">사회활동·언론</a>
+        <a href="javascript:void(0)" onclick="js:scrollMove('story')">의뢰 성공 사례</a>
     </div>
 
     <!-- Logo, Menu at the Top -->
     <header id="sect-intro">
         <div class="top flex">
-            <img class="logo" src="resources/img/logo-gold.png" alt="">
+            <img class="logo" src="./resources/img/logo-gold.png" alt="">
             <div class="btn-nav flex">
                 <i class="fas fa-bars fa-2x"></i>
                 <i class="fas fa-times fa-2x"></i>
@@ -239,5 +240,7 @@
         </div>
     </footer>
 </body>
+
+<script src="./resources/js/main.js"></script>
 
 </html>

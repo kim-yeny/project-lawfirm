@@ -122,7 +122,7 @@ nav .gnb > li > a:hover {
 nav .lnb {
     display: none;
     position: absolute;
-    top: 50px;
+    top: 50.5px;
     left: 0;
     width: 100%;
     background: rgba(34, 34, 34, 0.8);
@@ -145,6 +145,10 @@ nav .lnb > li > a:hover {
 nav .gnb > li > a:hover + .lnb,
 nav .gnb > li:hover .lnb {
     display: block;
+}
+
+nav .gnb a.on {
+    color: #B39D72;
 }
 
 #intro {
