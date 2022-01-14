@@ -7,7 +7,7 @@ html {
     font-size: 20px;
     scroll-behavior: smooth;
     overflow-x: hidden;
-    background: #FFFCF5;
+    /* background: #FFFCF5; */
 }
 
 section {
@@ -151,7 +151,7 @@ nav .gnb a.on {
     color: #B39D72;
 }
 
-#intro {
+#intro-screen {
     justify-content: center;
     align-items: center;
     max-width: 1920px;
@@ -159,16 +159,17 @@ nav .gnb a.on {
     height: 600px;
     padding: 0 15px;
     background: url("../img/intro-background-2.jpg") no-repeat center;
+    background-size: cover;
     color: #fff;
 }
 
-#intro h1 {
+#intro-screen h1 {
     width: 1200px;
     font-size: 2rem;
     color: #B39D72;
 }
 
-#intro h1 span {
+#intro-screen h1 span {
     width: 500px;
     margin: 20px 0 0;
     font-weight: lighter;
@@ -176,7 +177,7 @@ nav .gnb a.on {
 }
 
 /* SECTION */
-.service {
+#service {
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -184,7 +185,7 @@ nav .gnb a.on {
     box-sizing: border-box;
 }
 
-.service h1 {
+#service h1 {
     width: 100%;
     max-width: 1200px;
     margin: 0 0 30px;
@@ -192,29 +193,30 @@ nav .gnb a.on {
     font-size: 1.8rem;
 }
 
-.service h1 span {
+#service h1 span {
     margin: 10px 0 0;
     color: #aaa;
 }
 
-.service > div {
+#service > div {
     align-items: flex-end;
     max-width: 1200px;
     height: 280px;
 }
 
-.service .card {
+#service .card {
     flex-direction: column;
     position: relative;
     height: 230px;
     padding: 30px;
     box-sizing: border-box;
-    background: rgba(34, 34, 34, 1);
+    background: #333;
     color: #fff;
     transition: height 0.5s;
+    overflow: hidden;
 }
 
-.service .card:not(:nth-of-type(5)):after {
+#service .card:not(:nth-of-type(5)):after {
     content: "";
     position: absolute;
     right: 0;
@@ -223,18 +225,16 @@ nav .gnb a.on {
     background: rgba(255, 255, 255, 0.3);
 }
 
-.service .card:hover {
+#service .card:hover {
     height: 280px;
     background: #B39D72;
 }
 
-.service .card:hover button {
-    visibility: visible;
+#service .card:hover button {
     opacity: 1;
 }
 
-.service .card button {
-    visibility: hidden;
+#service .card button {
     opacity: 0;
     padding: 10px 0;
     background: transparent;
@@ -244,36 +244,37 @@ nav .gnb a.on {
     transition: opacity 1s;
 }
 
-.service .card button:hover {
+#service .card button:hover {
     background: rgba(255, 255, 255, 0.3);
 }
 
-.service .card i {
+#service .card i {
     margin: 0 0 20px;
     text-align: right;
+    opacity: 30%;
 }
 
-.service .card p {
+#service .card p {
     margin: 15px 0 20px;
 }
 
-.share {
+#share {
     padding: 100px 15px 150px 15px;
     box-sizing: border-box;
     text-align: center;
     background: url("../img/share.jpg") no-repeat center;
 }
 
-.share h1 {
+#share h1 {
     font-size: 1.8rem;
     color: #fff;
 }
 
-.share span {
+#share span {
     margin-top: 10px;
 }
 
-.share button {
+#share button {
     margin-top: 30px;
     padding: 10px 50px;
     border: 1px solid #fff;
@@ -281,18 +282,18 @@ nav .gnb a.on {
     color: #fff;
 }
 
-.share button:hover {
+#share button:hover {
     background: #fff;
     color: #000;
 }
 
-.consult {
+#consult {
     position: relative;
     height: 300px;
     padding: 0 15px;
 }
 
-.consult .box-left {
+#consult .box-left {
     justify-content: flex-end;
     align-items: center;
     position: absolute;
@@ -307,15 +308,15 @@ nav .gnb a.on {
     z-index: 10;
 }
 
-.consult .box-left h1 {
+#consult .box-left h1 {
     width: 300px;
 }
 
-.consult .box-left span {
+#consult .box-left span {
     margin-top: 20px;
 }
 
-.consult .box-right {
+#consult .box-right {
     align-items: center;
     position: absolute;
     top: 0;
@@ -327,14 +328,14 @@ nav .gnb a.on {
     background: #222;
 }
 
-.consult form {
+#consult form {
     flex-direction: column;
     width: 40%;
     height: 230px;
 }
 
-.consult input[type=text],
-.consult textarea {
+#consult input[type=text],
+#consult textarea {
     margin: 0 0 10px;
     padding: 7px;
     border: 1px solid #fff;
@@ -342,17 +343,17 @@ nav .gnb a.on {
     color: #fff;
 }
 
-.consult textarea {
+#consult textarea {
     resize: none;
     flex: 1;
 }
 
-.consult .box-right span {
+#consult .box-right span {
     color: #fff;
     font-size: 0.7rem;
 }
 
-.consult .box-right button {
+#consult .box-right button {
     margin: 0 0 0 30px;
     width: 200px;
     height: 230px;
@@ -360,18 +361,18 @@ nav .gnb a.on {
     background: #333;
 }
 
-.consult .box-right button:hover {
+#consult .box-right button:hover {
     background: #B39D72;
 }
 
-.social {
+#social {
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 100px 15px 130px 15px;
 }
 
-.social .box-con {
+#social .box-con {
     justify-content: space-between;
     width: 100%;
     max-width: 1200px;
@@ -379,41 +380,41 @@ nav .gnb a.on {
     color: #fff;
 }
 
-.social .box-con > div {
+#social .box-con > div {
     flex-direction: column;
     justify-content: center;
     width: 49%;
     background-position: 100% 50%;
 }
 
-.social .box-left {
+#social .box-left {
     background: url("../img/social-1.jpg") no-repeat;
 }
 
-.social .box-right {
+#social .box-right {
     background: url("../img/social-2.jpg") no-repeat;
 }
 
-.social .box-con > div > div {
+#social .box-con > div > div {
     width: 50%;
     height: 100%;
     padding: 30px;
     box-sizing: border-box;
-    background: #605C30;
+    background: #0F1E32;
     transition: all 0.5s;
 }
 
-.social .box-con > div > div:hover {
+#social .box-con > div > div:hover {
     width: 60%;
 }
 
-.social .box-con > div > div > h1 {
+#social .box-con > div > div > h1 {
     position: relative;
     padding-top: 10px;
     font-size: 1.2rem;
 }
 
-.social .box-con > div > div > h1::before {
+#social .box-con > div > div > h1::before {
     content: "";
     position: absolute;
     top: 0;
@@ -423,18 +424,18 @@ nav .gnb a.on {
     background: #fff;
 }
 
-.social > h1 {
+#social > h1 {
     margin-bottom: 50px;
     text-align: center;
 }
 
-.social span {
+#social span {
     width: 200px;
     margin: 5px 0 40px;
     font-size: 0.8rem;
 }
 
-.social button {
+#social button {
     padding: 5px 20px;
     border: 1px solid #fff;
     background: transparent;
@@ -442,17 +443,17 @@ nav .gnb a.on {
     color: #fff;
 }
 
-.social button:hover {
+#social button:hover {
     background: rgba(255, 255, 255, 0.3);
 }
 
-.story {
+#story {
     height: 150px;
     padding: 0 15px;
     background: url("../img/story.jpg") no-repeat center;
 }
 
-.story > div {
+#story > div {
     justify-content: space-between;
     align-items: center;
     max-width: 1200px;
@@ -461,12 +462,12 @@ nav .gnb a.on {
     box-sizing: border-box;
 }
 
-.story h1 {
+#story h1 {
     font-weight: normal;
     color: #fff;
 }
 
-.story button {
+#story button {
     width: 200px;
     height: 50px;
     background: #B39D72;
@@ -477,6 +478,10 @@ footer {
     padding: 50px 15px;
     background: #222;
     color: #aaa;
+}
+
+footer span {
+    font-size: 0.8rem;
 }
 
 footer > div {

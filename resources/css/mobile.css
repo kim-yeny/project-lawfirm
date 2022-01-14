@@ -3,14 +3,15 @@
 
 /* Mobile ver. */
 @media(max-width : 1100px) {
-    * {
-        color: red;
-    }
-
     body,
     html {
         min-width: 310px;
-        font-size: 18px;
+        font-size: 16px;
+    }
+
+    h1,
+    section h1 {
+        font-size: 1.8rem;
     }
 
     /* BOTTOM (Only Mobile) */
@@ -21,10 +22,11 @@
         bottom: 0;
         width: 100%;
         height: 70px;
-        padding: 10px 20px 10px 20px;
+        padding: 10px;
         box-sizing: border-box;
         background: #605C30;
         z-index: 90;
+        box-shadow: 0 2px 10px #000;
     }
 
     .bottom-menu a {
@@ -34,7 +36,6 @@
         text-align: center;
         font-size: 0.8rem;
         color: #fff;
-        margin: 0 5px;
     }
 
     .bottom-menu a:not(:last-child):after {
@@ -44,7 +45,7 @@
         top: 0;
         width: 1px;
         height: 100%;
-        background: rgba(255, 255, 255, 0.1);
+        background: rgba(255, 255, 255, 0.2);
     }
 
     .bottom-menu i {
@@ -74,6 +75,7 @@
         align-items: center;
         position: relative;
         width: 30px;
+        cursor: pointer;
     }
 
     header .logo {
@@ -87,13 +89,16 @@
     }
 
     nav {
-        display: none !important;
         justify-content: flex-start;
         align-items: flex-start;
         position: fixed;
         top: 70px;
         width: 100%;
         height: 100%;
+        z-index: -100;
+    }
+
+    nav.on {
         z-index: 100;
     }
 
@@ -121,122 +126,128 @@
         background: #333;
     }
 
-    #intro {
+    #intro-screen {
         max-width: 100%;
         height: 500px;
-        padding: 0 30px;
+        padding: 10px 30px;
         background-position: 60% 50%;
         background-size: cover;
     }
 
-    #intro h1 {
-        font-size: 1.8rem;
+    #intro-screen h1 {
+        text-align: justify;
+        padding: 50px 0 0 0;
     }
 
-    #intro h1 span {
+    #intro-screen h1 span {
         width: 100%;
     }
 
     /* SECTION */
-    .service {
-        padding: 50px 20px;
+    #service {
+        padding: 50px 30px;
     }
 
-    .service h1 {
-        width: 90%;
-    }
-
-    .service > div {
+    #service > div {
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
         max-width: 100%;
-        width: 90%;
+        width: 100%;
         height: fit-content;
     }
 
-    .service .card {
+    #service .card {
         width: 100%;
         height: fit-content;
         margin-bottom: 5px;
-        padding: 30px 25px;
+        padding: 20px 30px 30px;
         cursor: pointer;
     }
 
-    .service .card:not(:nth-of-type(5)):after {
+    #service .card:not(:nth-of-type(5)):after {
         width: 0;
         height: 0;
     }
 
-    .service .card:hover {
+    #service .card:hover {
         height: fit-content;
     }
 
-    .service .card button {
+    #service .card button {
         display: none;
     }
 
-    .service .card i {
-        margin: 0 0 15px;
+    #service .card i {
+        margin: 0;
     }
 
-    .service .card p {
+    #service .card p {
         margin: 10px 0 0 0;
+        font-size: 1rem;
     }
 
-    .share {
-        padding: 100px 20px;
+    #service .card b {
+        font-size: 1.5rem;
     }
 
-    .share span {
+    #share {
+        padding: 50px 30px;
+    }
+
+    #share span {
         margin: 20px 0 10px 0;
     }
 
-    .consult {
+    #consult {
         width: 100%;
         height: fit-content;
         padding: 0;
     }
 
-    .consult .box-left {
+    #consult .box-left {
         justify-content: center;
-        text-align: center;
         position: unset;
         width: 100%;
         height: fit-content;
-        padding: 20px;
+        padding: 30px;
+        text-align: center;
     }
 
-    .consult .box-right {
+    #consult .box-left h1 {
+        width: 100%;
+    }
+
+    #consult .box-right {
         flex-direction: column;
         position: unset;
         width: 100%;
         height: fit-content;
-        padding: 20px;
+        padding: 30px;
     }
 
-    .consult form {
+    #consult form {
         width: 100%;
         height: 230px;
     }
 
-    .consult .box-right button {
+    #consult .box-right button {
         margin: 30px 0 0;
         width: 100%;
         height: fit-content;
         padding: 10px 0;
     }
 
-    .social {
+    #social {
         padding: 80px 0 0;
     }
 
-    .social .box-con {
+    #social .box-con {
         flex-direction: column;
         max-width: 100%;
     }
 
-    .social .box-con > div {
+    #social .box-con > div {
         flex-direction: column;
         justify-content: center;
         width: 100%;
@@ -244,58 +255,63 @@
         background-size: cover;
     }
 
-    .social .box-con > div:first-of-type {
+    #social .box-con > div:first-of-type {
         border-bottom: 1px solid #333;
     }
 
-    .social .box-con > div > div {
+    #social .box-con > div > div {
         padding: 30px;
         box-sizing: content-box;
         transition: unset;
     }
 
-    .social .box-con > div > div:hover {
+    #social .box-con > div > div:hover {
         width: 50%;
     }
 
-    .social h1 {
+    #social h1 {
         width: 70%;
         margin-bottom: 30px;
     }
 
-    .social span {
+    #social span {
         width: fit-content;
         margin: 5px 0 0;
     }
 
-    .story {
+    #story {
         height: 200px;
-        padding: 0 20px;
+        padding: 0 30px;
     }
 
-    .story > div {
+    #story > div {
         flex-direction: column;
         justify-content: center;
         align-items: center;
         max-width: 100%;
     }
 
-    .story h1 {
-        margin-bottom: 10px;
+    #story h1 {
+        margin-bottom: 20px;
+        font-size: 1.5rem;
     }
 
-    .story button {
+    #story button {
         width: 50%;
         min-width: 100px;
     }
 
     footer {
-        padding: 30px 30px 100px 30px;
+        padding: 20px 20px 90px 20px;
     }
 
     footer > div {
         justify-content: flex-start;
         max-width: 100%;
+    }
+
+    footer img.logo {
+        height: 40px;
     }
 
     footer .box-right {
