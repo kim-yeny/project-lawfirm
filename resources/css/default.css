@@ -1,17 +1,197 @@
-/* Reset */
- * {outline:0 !important;}
-html,body,h1,h2,h3,h4,h5,h6,div,p,blockquote,pre,code,address,ul,ol,li,menu,nav,section,article,aside,
-dl,dt,dd,table,thead,tbody,tfoot,label,caption,th,td,form,fieldset,legend,hr,input,button,textarea,object,figure,figcaption {margin:0;padding:0;}
-html, body{width:100%;}
-html{-webkit-touch-callout:none; -webkit-user-select:none; -webkit-tap-highlight-color:rgba(0, 0, 0, 0);}
-ul,ol,li{list-style:none;}
-table{width:100%;border-spacing:0;border-collapse:collapse;}
-img,fieldset{border:0;}
-caption,legend{line-height:0;font-size:1px;overflow:hidden;}
-a{color:#000;text-decoration:none;}
-button{cursor: pointer; border: none;}
- 
-.clear {clear:both;}
-.clear:after { content:""; display:block; clear:both;}
-.hide {position: absolute; left: -5000px;}
-.flex {display: flex;}
+/* ALL */
+* {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+body,
+html {
+    font-size: 20px;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    background: #fff;
+}
+
+section {
+    padding: 0 15px;
+}
+
+button,
+span {
+    font-size: 1rem;
+}
+
+p {
+    font-size: 0.8rem;
+}
+
+span {
+    display: block;
+    font-weight: lighter;
+}
+
+/* BOTTOM (only Mobile) */
+.bottom-menu {
+    display: none;
+}
+
+/* SCROLL (only PC) */
+.scroll {
+    position: fixed;
+    right: 20px;
+    top: 40%;
+    z-index: 50;
+}
+
+.scroll a {
+    display: block;
+    position: relative;
+    height: 30px;
+    margin: 3px 0;
+    text-align: right;
+    line-height: 30px;
+    font-size: 0.7rem;
+    color: #aaa;
+}
+
+.scroll a::after {
+    content: "";
+    position: absolute;
+    right: -20px;
+    width: 10px;
+    height: 30px;
+    background: #aaa;
+}
+
+.scroll a.on::after {
+    background: #605C30;
+}
+
+/* HEADER */
+header .top {
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    border-bottom: 1px solid #333;
+    background: #222;
+}
+
+header .logo {
+    height: 60px;
+}
+
+header i {
+    display: none !important;
+}
+
+/* NAV in HEADER */
+nav {
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    border-bottom: 2px solid #B39D72;
+    box-sizing: border-box;
+    background: #222;
+}
+
+nav li > a {
+    text-align: center;
+    display: block;
+    color: #aaa;
+}
+
+nav .gnb {
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+nav .gnb > li {
+    position: relative;
+    float: left;
+    width: 230px;
+}
+
+nav .gnb > li > a {
+    line-height: 50px;
+}
+
+nav .gnb > li > a:hover {
+    color: #B39D72;
+}
+
+nav .lnb {
+    display: none;
+    position: absolute;
+    top: 50.5px;
+    left: 0;
+    width: 100%;
+    background: rgba(34, 34, 34, 0.8);
+    padding: 15px 0 0 0;
+}
+
+nav .lnb > li {
+    padding: 0 0 15px 0;
+}
+
+nav .lnb > li > a {
+    width: 100%;
+    color: #aaa;
+}
+
+nav .lnb > li > a:hover {
+    color: #fff;
+}
+
+nav .gnb > li > a:hover + .lnb,
+nav .gnb > li:hover .lnb {
+    display: block;
+}
+
+nav .gnb a.on {
+    color: #B39D72;
+}
+
+/* FOOTER */
+footer {
+    padding: 50px 15px;
+    background: #222;
+    color: #aaa;
+}
+
+footer span {
+    font-size: 0.8rem;
+}
+
+footer > div {
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+footer img.logo {
+    margin-bottom: 20px;
+    height: 50px;
+    opacity: 30%;
+}
+
+footer .box-left b {
+    color: #B39D72;
+}
+
+footer .box-left span {
+    margin-top: 20px;
+}
+
+footer .box-right {
+    width: 20%;
+}
+
+footer .box-right b {
+    display: block;
+    margin: 5px 0 30px;
+    font-size: 2rem;
+    color: #B39D72;
+}

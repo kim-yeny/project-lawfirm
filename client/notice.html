@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="yeny">
+    <meta name="keywords" content="Business">
+    <meta name="description" content="Business">
+    <title>샘플 법무법인 | 공지사항</title>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+
+    <!-- Google Web Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+        crossorigin="anonymous" referrerpulicy="no-referrer" />
+
+    <!-- CSS Public -->
+    <script src="../resources/js/prefixfree.min.js"></script>
+    <link rel="stylesheet" href="../resources/css/base.css">
+    <link rel="stylesheet" href="../resources/css/default.css">
+    <link rel="stylesheet" href="../resources/css/default-mobile.css">
+
+    <!-- CSS Private -->
+    <link rel="stylesheet" href="../resources/css/notice.css">
+    <link rel="stylesheet" href="../resources/css/notice-mobile.css">
+</head>
+
+<body>
+    <!-- (Mobile ver.) Navigation at the Bottom -->
+    <div class="bottom-menu">
+        <a href="tel:0000"><i class="fas fa-phone-alt fa-lg"></i>전화하기</a>
+        <a href="#a"><i class="fas fa-comment-dots fa-lg"></i>카카오톡</a>
+        <a href="https://map.naver.com/" target="_blank"><i class="fas fa-map-marker-alt fa-lg"></i>오시는길</a>
+        <a href="#service"><i class="fas fa-user-tie fa-lg"></i>업무 분야</a>
+    </div>
+
+    <!-- Logo, Menu at the Top -->
+    <header id="intro">
+        <div class="top flex">
+            <img class="logo" src="../resources/img/logo-gold.png" alt="">
+            <div class="btn-nav flex">
+                <i class="btn-menu fas fa-2x fa-bars"></i>
+            </div>
+        </div>
+        <nav class="nav flex">
+            <ul class="gnb flex">
+                <li>
+                    <a href="../about/sample">법인소개</a>
+                    <ul class="lnb">
+                        <li><a href="../about/sample">샘플 소개</a></li>
+                        <li><a href="../about/contact">오시는 길</a></li>
+                        <li><a href="../about/recruit">인재채용</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="../business/business_main">업무안내</a>
+                    <ul class="lnb">
+                        <li><a href="../business/business_main">주요 업무 분야</a></li>
+                        <li><a href="../business/business_process">업무의뢰절차</a></li>
+                        <li><a href="../business/business_review">진행사례·후기</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="../member/lawyer">구성원</a>
+                    <ul class="lnb">
+                        <li><a href="../member/lawyer">변호사</a></li>
+                        <li><a href="../member/advice">자문단</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="../counseling/process">상담문의</a>
+                    <ul class="lnb">
+                        <li><a href="../counseling/process">상담 안내</a></li>
+                        <li><a href="../counseling/faq">자주 묻는 질문</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="../client/notice">고객센터</a>
+                    <ul class="lnb">
+                        <li><a href="../client/notice.html">공지사항</a></li>
+                        <li><a href="../client/library">자료실</a></li>
+                        <li><a href="../client/news">활동·언론</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Intro -->
+    <section class="title flex" id="">
+        <h1>공지사항
+            <span>
+                샘플 법무법인의 공지사항을 비롯한 각종 소식입니다.
+            </span>
+        </h1>
+    </section>
+
+    <!-- Select menu area -->
+    <section class="box-menu flex">
+        <div class="flex">
+            <!-- Main menu -->
+            <select name="main" id="">
+                <option value="">법인소개</option>
+                <option value="">업무안내</option>
+                <option value="">구성원</option>
+                <option value="">상담문의</option>
+                <option value="">고객센터</option>
+            </select>
+
+            <!-- Sub menu -->
+            <select name="sub" id="">
+                <option value="">임시 텍스트</option>
+            </select>
+        </div>
+    </section>
+
+    <!-- List of notice -->
+    <section class="container flex" id="">
+        <div class="inner-list">
+            <!-- Search input and BTN -->
+            <div class="search flex">
+                <input type="text" placeholder="검색어를 입력하세요">
+                <i class="fas fa-search"></i>
+            </div>
+
+            <!-- List -->
+            <ul class="list">
+                <li>
+                    <a href="#a">
+                        <div class="list-num">00</div>
+                        <div class="list-title">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</div>
+                        <div class="list-date">2022.00.00</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#a">
+                        <div class="list-num">00</div>
+                        <div class="list-title">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</div>
+                        <div class="list-date">2022.00.00</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#a">
+                        <div class="list-num">00</div>
+                        <div class="list-title">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</div>
+                        <div class="list-date">2022.00.00</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#a">
+                        <div class="list-num">00</div>
+                        <div class="list-title">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</div>
+                        <div class="list-date">2022.00.00</div>
+                    </a>
+                </li>
+            </ul>
+
+            <!-- Paging number at the bottom -->
+            <ul class="paging flex">
+                <li>111</li>
+                <li>2</li>
+                <li>3</li>
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <div class="flex">
+            <div class="box-left">
+                <img class="logo" src="../resources/img/logo-white.png" alt="">
+                <p>
+                    <b>본사</b> 서울 샘플구 샘플대로 123길 45, 샘플빌딩 (샘플동 678-9)<br>
+                    <b>분사무소</b> 충남 샘플시 샘플대로 987길, 샘플타워 6층 (샘플동 543-21)
+                    <span>Copyright ⓒ 2022 EsRP All rights reserved.</span>
+                </p>
+            </div>
+            <div class="box-right">
+                <p>
+                    고객센터
+                    <b>1500-1500</b>
+                    월~금 09:30~18:00<br>
+                    주말, 공휴일은 미운영
+                </p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+<script src="../resources/js/main.js"></script>
+
+</html>

@@ -1,131 +1,7 @@
 /* Mobile ver. */
-@media(max-width : 767px) {}
-
-/* Mobile ver. */
 @media(max-width : 1100px) {
-    body,
-    html {
-        min-width: 310px;
-        font-size: 16px;
-    }
 
-    h1,
-    section h1 {
-        font-size: 1.8rem;
-    }
-
-    /* BOTTOM (Only Mobile) */
-    .bottom-menu {
-        display: flex;
-        align-items: center;
-        position: fixed;
-        bottom: 0;
-        width: 100%;
-        height: 70px;
-        padding: 10px;
-        box-sizing: border-box;
-        background: #605C30;
-        z-index: 90;
-        box-shadow: 0 2px 10px #000;
-    }
-
-    .bottom-menu a {
-        display: block;
-        flex-grow: 1;
-        position: relative;
-        text-align: center;
-        font-size: 0.8rem;
-        color: #fff;
-    }
-
-    .bottom-menu a:not(:last-child):after {
-        content: "";
-        position: absolute;
-        right: 0;
-        top: 0;
-        width: 1px;
-        height: 100%;
-        background: rgba(255, 255, 255, 0.2);
-    }
-
-    .bottom-menu i {
-        width: 100%;
-        margin-bottom: 15px;
-    }
-
-    /* SCROLL (Only PC) */
-    .scroll {
-        display: none;
-    }
-
-    /* HEADER */
-    header .top {
-        position: fixed;
-        width: 100%;
-        height: 70px;
-        padding: 0 20px;
-        border-bottom: 2px solid #B39D72;
-        box-sizing: border-box;
-        justify-content: space-between;
-        z-index: 100;
-    }
-
-    header .btn-nav {
-        justify-content: center;
-        align-items: center;
-        position: relative;
-        width: 30px;
-        cursor: pointer;
-    }
-
-    header .logo {
-        height: 35px;
-    }
-
-    header i {
-        display: block !important;
-        position: absolute;
-        color: #aaa;
-    }
-
-    nav {
-        justify-content: flex-start;
-        align-items: flex-start;
-        position: fixed;
-        top: 70px;
-        width: 100%;
-        height: 100%;
-        z-index: -100;
-    }
-
-    nav.on {
-        z-index: 100;
-    }
-
-    nav li > a {
-        text-align: left;
-    }
-
-    nav .gnb {
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start;
-        width: 100%;
-        padding: 0;
-    }
-
-    nav .gnb > li {
-        position: unset;
-        width: 100%;
-        border-bottom: 1px solid #333;
-        text-indent: 20px;
-    }
-
-    nav .lnb {
-        position: unset;
-        background: #333;
-    }
-
+    /* INTRO Screen */
     #intro-screen {
         max-width: 100%;
         height: 500px;
@@ -179,7 +55,7 @@
     }
 
     #service .card i {
-        margin: 0;
+        display: none;
     }
 
     #service .card p {
@@ -299,23 +175,6 @@
     #story button {
         width: 50%;
         min-width: 100px;
-    }
-
-    footer {
-        padding: 20px 20px 90px 20px;
-    }
-
-    footer > div {
-        justify-content: flex-start;
-        max-width: 100%;
-    }
-
-    footer img.logo {
-        height: 40px;
-    }
-
-    footer .box-right {
-        display: none;
     }
 
 }
