@@ -1,23 +1,23 @@
-// 우측 스크롤 박스
+// Side scroll box at the right
 let scrollBox = $('.scroll');
 
-// 섹션별 상단 좌표값
+// Top offset by section
 const serviceTop = $('#service').position().top - 200;
 const shareTop = $('#share').position().top - 200;
 const consultTop = $('#consult').position().top - 200;
 const socialTop = $('#social').position().top - 200;
 
-// 우측 스크롤 박스 > a 태그 클릭 이벤트
+// Click Event (Side scroll box)
 function scrollMove(point) {
-    // point에 해당하는 섹션의 좌표값
+    // Parameter == Section top offset
     var sectTop = $('#' + point).offset().top;
 
-    // share, consult 상단에 여유
+    // Only #share, #consult
     if (point == "share" || point == "consult") {
         sectTop -= 150;
     };
 
-    // 해당 섹션으로 스크롤 이동
+    // Scroll move to section
     $('html, body').animate({
         scrollTop: sectTop
     }, 100);
@@ -26,10 +26,10 @@ function scrollMove(point) {
 $(function () {
     // Scroll Event
     $(window).scroll(function () {
-        // 현재 스크롤 상단의 위치
+        // Now scroll offset top
         var nowTop = $(window).scrollTop();
 
-        // 현재 스크롤 위치랑 동일한 위치의 섹션 찾아서 클래스 토글
+        // Searching, Moving, Toggle class (now scroll offset == section)
         if (nowTop < serviceTop && nowTop != 0) {
             scrollBox.children().eq(1).removeClass('on');
             scrollBox.children().eq(0).addClass('on');
