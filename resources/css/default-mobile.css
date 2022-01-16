@@ -76,13 +76,14 @@
     }
 
     header .logo {
-        height: 35px;
+        width: 100px;
+        /* height: 40px; */
     }
 
     header i {
         display: block !important;
         position: absolute;
-        color: #aaa;
+        color: #555;
     }
 
     /* NAV in HEADER */
