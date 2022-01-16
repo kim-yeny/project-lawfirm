@@ -1,4 +1,5 @@
 $(function () {
+    // Maintain .gnb color while hovering .lnb
     // .lnb 호버하는 동안 .gnb 색상 유지
     $('.lnb').hover(function () {
         $(this).prev().toggleClass('on');
