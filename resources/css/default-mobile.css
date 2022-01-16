@@ -88,7 +88,7 @@
 
     /* NAV in HEADER */
     nav {
-        display: none;
+        display: none !important;
         justify-content: flex-start;
         align-items: flex-start;
         position: fixed;
@@ -99,7 +99,7 @@
     }
 
     nav.on {
-        display: block;
+        display: block !important;
         z-index: 100;
     }
 
