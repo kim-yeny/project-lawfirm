@@ -88,6 +88,7 @@
 
     /* NAV in HEADER */
     nav {
+        display: none;
         justify-content: flex-start;
         align-items: flex-start;
         position: fixed;
@@ -98,6 +99,7 @@
     }
 
     nav.on {
+        display: block;
         z-index: 100;
     }
 
