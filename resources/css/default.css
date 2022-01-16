@@ -9,6 +9,11 @@ html {
     scroll-behavior: smooth;
     overflow-x: hidden;
     background: #fff;
+
+    /* touch-action: none; */
+    -webkit-overflow-scrolling: none;
+    overflow-x: hidden;
+    overscroll-behavior: none;
 }
 
 section {
