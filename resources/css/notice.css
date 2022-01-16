@@ -21,7 +21,6 @@ section {
 
 .title span {
     margin: 10px 0 0 0;
-    font-size: 0.8rem;
 }
 
 .box-menu {
@@ -63,6 +62,7 @@ section {
     width: 200px;
     padding: 10px;
     border: none;
+    border-radius: none;
     border-bottom: 1px solid #ccc;
     font-size: 0.8rem;
 }
@@ -143,6 +143,10 @@ section {
 
     .title {
         margin: 50px 0 0 0;
+    }
+
+    .title h1 {
+        width: 100%;
     }
 
     .list .list-date {
