@@ -28,8 +28,8 @@
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
-        max-width: 100%;
         width: 100%;
+        max-width: 100%;
         height: fit-content;
     }
 
@@ -60,11 +60,6 @@
 
     #service .card p {
         margin: 10px 0 0 0;
-        font-size: 1rem;
-    }
-
-    #service .card b {
-        font-size: 1.5rem;
     }
 
     #share {
@@ -169,7 +164,6 @@
 
     #story h1 {
         margin-bottom: 20px;
-        font-size: 1.5rem;
     }
 
     #story button {

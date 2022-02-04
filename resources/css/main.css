@@ -2,9 +2,8 @@
 #intro-screen {
     justify-content: center;
     align-items: center;
-    max-width: 1920px;
-    margin: 0 auto;
     height: 600px;
+    margin: 0 auto;
     padding: 0 15px;
     background: url("../img/intro-background.jpg") no-repeat center;
     background-size: cover;
@@ -38,7 +37,7 @@
     max-width: 1200px;
     margin: 0 0 30px;
     text-align: left;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
 }
 
 #service h1 span {
@@ -111,10 +110,11 @@
     box-sizing: border-box;
     text-align: center;
     background: url("../img/share.jpg") no-repeat center;
+    background-size: cover;
 }
 
 #share h1 {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     color: #fff;
 }
 
@@ -202,11 +202,11 @@
 }
 
 #consult .box-right button {
-    margin: 0 0 0 30px;
     width: 200px;
     height: 230px;
-    color: #fff;
+    margin: 0 0 0 30px;
     background: #333;
+    color: #fff;
 }
 
 #consult .box-right button:hover {
@@ -299,6 +299,7 @@
     height: 150px;
     padding: 0 15px;
     background: url("../img/story.jpg") no-repeat center;
+    background-size: cover;
 }
 
 #story > div {

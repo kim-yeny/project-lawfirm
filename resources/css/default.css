@@ -80,10 +80,10 @@ header .top {
 }
 
 header .logo {
-    background: url("../img/logo-gold.png") no-repeat center;
-    background-size: contain;
     width: 200px;
     height: 60px;
+    background: url("../img/logo-gold.png") no-repeat center;
+    background-size: contain;
 }
 
 header i {
@@ -95,14 +95,14 @@ nav {
     justify-content: center;
     align-items: center;
     height: 50px;
-    border-bottom: 2px solid #B39D72;
     box-sizing: border-box;
+    border-bottom: 2px solid #B39D72;
     background: #222;
 }
 
 nav li > a {
-    text-align: center;
     display: block;
+    text-align: center;
     color: #aaa;
 }
 
@@ -134,8 +134,8 @@ nav .lnb {
     top: 50.5px;
     left: 0;
     width: 100%;
-    background: rgba(34, 34, 34, 0.8);
     padding: 15px 0 0 0;
+    background: rgba(34, 34, 34, 0.8);
 }
 
 nav .lnb > li {

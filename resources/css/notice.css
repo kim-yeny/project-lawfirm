@@ -109,13 +109,13 @@ section {
 }
 
 .list .list-date {
-    color: #ccc;
     width: 12%;
+    color: #ccc;
 }
 
 .list .on {
-    color: #B39D72;
     font-weight: bold;
+    color: #B39D72;
 }
 
 .paging {
