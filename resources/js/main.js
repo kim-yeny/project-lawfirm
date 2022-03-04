@@ -73,4 +73,23 @@ $(function () {
             return true;
         };
     });
+
+    // Style change when focus service
+    $("#service .card button").focus(function () {
+        $(this).css({
+            opacity: "1"
+        });
+
+        $(this).parent().css({
+            height: "280px",
+            background: "#B39D72"
+        });
+    });
+
+    // Open .lnb when focus nav
+    $("nav .gnb > li > a").focus(function () {
+        $(this).siblings().css({
+            display: "block"
+        });
+    });
 });
